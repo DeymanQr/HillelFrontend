@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cosmic adventures</title>
+	<style>
+		body {
+			margin: 5px;
+			padding: 0;
+		}
+		#main-header {
+			text-align: center;
+			background-color: #111;
+			padding: 20px;
+		}
+		#main-header h1 {
+			margin: 0;
+			color: #fff;
+			font-size: 50px;
+		}
+		#posts-section {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+		#posts-section article {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			margin: 20px;
+			min-width: 400px;
+			width: 25%;
+			height: 200px;
+			border: 1px solid #000;
+		}
+		#posts-section article h2 {
+			text-align: center;
+			margin: 0;
+			color: #fff;
+			background-color: #111;
+			padding: 10px;
+			font-size: 30px;
+		}
+		#posts-section article a {
+			text-align: center;
+			font-size: 20px;
+		}
+		#main-footer {
+			text-align: center;
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+	<header id="main-header">
+		<h1>Cosmic adventures blog</h1>
+	</header>
+	<section id="posts-section">
+		<article>
+			<h2>First satelite</h2>
+			<p>Sputnik 1 was the first artificial Earth satellite. It was launched into an elliptical low Earth orbit by the Soviet Union on 4 October 1957 as part of the Soviet space program...</p>
+			<a href="https://en.wikipedia.org/wiki/Sputnik_1" target="_blank">Read more</a>
+		</article>
+		<article>
+			<h2>First man in space</h2>
+			<p>Yuri Alekseyevich Gagarin (9 March 1934 – 27 March 1968) was a Soviet pilot and cosmonaut who became the first human to journey into outer space. Travelling in the ...</p>
+			<a href="https://en.wikipedia.org/wiki/Yuri_Gagarin" target="_blank">Read more</a>
+		</article>
+		<article>
+			<h2>First adventure to the moon</h2>
+			<p>NApollo 11 (July 16–24, 1969) was the American spaceflight that first landed humans on the Moon. Commander Neil Armstrong and lunar module pilot Buzz Aldrin landed the Apollo Lunar...</p>
+			<a href="https://en.wikipedia.org/wiki/Apollo_11" target="_blank">Read more</a>
+		</article>
+	</section>
+	<aside id="navigation">
+		<h3>Categories</h3>
+		<nav>
+			<ol>
+				<li><a href="#">Historical astronauts</a></li>
+				<li><a href="#">Historical cosmic adventures</a></li>
+				<li><a href="#">Future adventures</a></li>
+			</ol>
+		</nav>
+	</aside>
+	<footer id="main-footer">
+		<p>Copyright &copy 2022, Cosmic adventures</p>
+	</footer>
+</body>
+</html>
