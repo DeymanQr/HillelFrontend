@@ -24,7 +24,7 @@ body {
 	z-index: 1;
 }
 
-/*.main::after {
+.main::after {
 	content: "";
 	display: block;
 	position: fixed;
@@ -37,7 +37,7 @@ body {
 	border-bottom: 75vh solid transparent;
 	border-right: 75vh solid rgba(0, 0, 0, 0.51);
 	transform: rotate(45deg);
-}*/
+}
 
 h1 {
 	grid-column: 1 / 7;
