@@ -1,0 +1,103 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	font-family: Tahoma;
+}
+
+.main {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(252.81deg, #47A6DC -40.48%, rgba(27, 32, 30, 0.86) 102.84%);
+	display: grid;
+	padding: 5% 10%;
+	grid: 20% 70% 10% / repeat(6, 10%) 40%;
+	color: #fff;
+}
+
+.main * {
+	z-index: 1;
+}
+
+/*.main::after {
+	content: "";
+	display: block;
+	position: fixed;
+	width: 0;
+	height: 0;
+	z-index: 0;
+	top: -55vh;
+	left: -11vh;
+	border-top: 75vh solid transparent;
+	border-bottom: 75vh solid transparent;
+	border-right: 75vh solid rgba(0, 0, 0, 0.51);
+	transform: rotate(45deg);
+}*/
+
+h1 {
+	grid-column: 1 / 7;
+	grid-row: 1 / 2;
+	display: flex;
+	align-items: flex-end;
+	font-size: 5vh;
+}
+
+.main > p {
+	grid-column: 1 / 7;
+	grid-row: 2 / 3;
+	padding-right: 40%;
+	font-size: 3vh;
+}
+
+form {
+	grid-column: 7 / 8;
+	grid-row: 1 / 4;
+	background: radial-gradient(97.61% 55.99% at 50.15% 44.01%, rgba(22, 81, 123, 0.69) 0%, #1E1A36 100%);
+	border-radius: 19px;
+	display: grid;
+	padding: 10% 5%;
+
+}
+
+form h2 {
+	font-size: 4vh;
+	margin: 0;
+	text-align: center;
+}
+
+form p {
+	margin: 0;
+	font-size: 2vh;
+	display: flex;
+	align-items: flex-end;
+}
+
+form input {
+	font-size: 2vh;
+	background: #ddd;
+	border-radius: 8px;
+	border: none;
+
+}
+
+form button {
+	font-size: 2vh;
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 5%;
+	border-radius: 10px;
+}
+
+a {
+	display: inline;
+	text-align: center;
+}
+
+img {
+	height: 100%;
+}
