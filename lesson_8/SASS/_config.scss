@@ -1,0 +1,39 @@
+$font-stack: Arial, Helvetica, sans-serif;
+$light-color: #d67dc4;
+$primery-color: #ea44d4;
+$secondary-color: #e5562b;
+
+$spaceamounts:(1,2,3,4,5);
+
+@each $space in $spaceamounts{
+  .m-#{$space}{
+    margin: #{$space}rem;
+  }
+  .my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+
+
+    .p-#{$space} {
+      padding: #{$space}rem;
+    }
+  
+    .py-#{$space} {
+      padding: #{$space}rem 0;
+    }
+
+
+}
+
+@function set-text-color($color){
+  @if(lightness($color)>70){
+    @return rgb(30, 33, 31)
+  } @else{
+    @return rgb(250, 248, 248)
+  }
+}
+
+@mixin set-background($color){
+  background-color: $color;
+  color: set-text-color($color);
+}
