@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Clock Alarm</title>
+	<link rel="stylesheet" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+<body>
+	<div class="clock">
+		<img src="resources/clock.png" alt="" class="clock__img">
+		<div id="clock__hour" class="clock__arrow"></div>
+		<div id="clock__min" class="clock__arrow"></div>
+		<div id="clock__sec" class="clock__arrow"></div>
+		<p class="clock__text"></p>
+	</div>
+	<div class="alarm">
+		<p>Choose time for alarm</p>
+		<div class="inps">
+			<select class="inp">
+				<option value="hour" selected hidden>Hour</option>
+			</select>
+			<select class="inp">
+				<option value="min" selected hidden>Minute</option>
+			</select>
+			<select class="inp">
+				<option value="sec" selected hidden>Second</option>
+			</select>
+		</div>
+		<button id="setAlarm">Add alarm</button>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
